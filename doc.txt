@@ -1,0 +1,60 @@
+IFCT0610 MF1215_3 Creación y mantenimiento de componentes software en sistemas de planificación
+de recursos empresariales y de gestión de relaciones con clientes
+
+ALUMNO: JANINA MARGARITA MORALES ARCE
+DOCENTE: ANTONIO HEREDIA MORANTE
+
+AGENDA DE CONTACTOS - Proyecto Práctico
+ 
+================================================================================
+
+1. Descripción general del programa
+───────────────────────────────────────
+Aplicación de consola en Python para gestionar una agenda de contactos 
+personales o profesionales.
+
+Funcionalidades principales:
+• Añadir nuevo contacto
+• Ver todos los contactos
+• Buscar contactos (por nombre, apellidos, teléfono o email)
+• Modificar datos de un contacto existente
+• Eliminar contacto
+• Exportar todos los contactos a archivo CSV
+
+2. Tecnologías utilizadas
+──────────────────────────────
+• Lenguaje:          Python 3
+• Base de datos:     SQLite 3
+• Módulo BD:         sqlite3 (incluido en la biblioteca estándar de Python)
+• Módulo CSV:        csv (estándar de Python)
+• Estructura:        Arquitectura modular con separación de responsabilidades
+
+3. Estructura del proyecto (5 archivos principales)
+────────────────────────────────────────────────────
+database.py     → Creación/conexión BD + tabla contactos
+operaciones.py  → Lógica CRUD (crear, leer, actualizar, eliminar) + exportar CSV
+interfaz.py     → Menú, entrada de datos, validaciones, formateo de salida
+main.py         → Punto de entrada, bucle principal y orquestación
+doc.txt         → Documentación del proyecto.
+Base de datos generada: contactos.db (SQLite)
+
+4. Año de realización y contexto
+────────────────────────────────
+Proyecto realizado en febrero de 2026 como parte de la unidad formativa
+MF1215_3: Creación y mantenimiento de componentes software en sistemas ERP/CRM.
+
+Demuestra los siguientes conceptos clave del certificado:
+• Uso de bases de datos relacionales ligeras (SQLite)
+• Separación de capas: presentación / lógica de negocio / acceso a datos
+• Programación modular e importaciones entre archivos
+• Gestión de excepciones básica
+• Interfaz de usuario por consola
+• Generación de archivos CSV
+
+5. Cómo ejecutar
+─────────────────
+1. Tener Python 3 instalado
+2. Situarse en la carpeta del proyecto
+3. Ejecutar:   python main.py    (o python3 main.py en algunos sistemas)
+
+La base de datos contactos.db se crea automáticamente la primera vez.
